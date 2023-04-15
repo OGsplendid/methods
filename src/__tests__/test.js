@@ -74,7 +74,7 @@ test('should throw an error improving dead\'s health', () => {
 });
 
 test('should cause damage of 30 points', () => {
-  let hero = new Zombie('Boo');
+  const hero = new Zombie('Boo');
   hero.damage(5);
   expect(hero.health).toBe(97);
 });
