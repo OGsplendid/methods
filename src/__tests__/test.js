@@ -58,3 +58,23 @@ test('should return Zombie\'s attack', () => {
   const hero = new Zombie('Boo');
   expect(hero.attack).toBe(10);
 });
+
+test('should improve heroe\'s stats', () => {
+  const hero = new Zombie('Boo');
+  hero.levelUp();
+  expect(hero.attack).toBe(12);
+});
+
+test('should throw an error improving dead\'s health', () => {
+  expect(() => {
+    const hero = new Zombie('Boo');
+    hero.health = 0;
+    hero.levelUp();
+  }).toThrow('Your hero is dead (can\'t resurrect dead hero)');
+});
+
+test('should cause damage of 30 points', () => {
+  let hero = new Zombie('Boo');
+  hero.damage(5);
+  expect(hero.health).toBe(97);
+});

@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OGsplendid/classes-inheritance.git"
+    "url": "git+https://github.com/OGsplendid/methods.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/OGsplendid/classes-inheritance/issues"
+    "url": "https://github.com/OGsplendid/methods/issues"
   },
-  "homepage": "https://github.com/OGsplendid/classes-inheritance#readme",
+  "homepage": "https://github.com/OGsplendid/methods#readme",
   "devDependencies": {
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.4",
