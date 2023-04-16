@@ -2,13 +2,13 @@ export default class Character {
   // static health = 100;
   // static level = 1;
 
-  constructor(name, type, attack, defence, health = 100, level = 1) {
+  constructor(name, type, attack, defence) {
     this.name = name;
     this.type = type;
     this.attack = attack;
     this.defence = defence;
-    this.health = health;
-    this.level = level;
+    this.health = 100;
+    this.level = 1;
   }
 
   get name() {
